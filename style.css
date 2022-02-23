@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#app {
+    @apply max-w-screen-xl mx-auto;
+}
+.header {
+    @apply flex justify-between items-center border-b py-2;
+}
+.header-left {
+    @apply flex flex-none justify-between items-center;
+}
+.header-right {
+    @apply flex justify-between items-center;
+}
+.form-search {
+    @apply relative;
+}
+.form-search__input {
+    @apply w-[400px] p-1 pl-[30px] outline-none border border-slate-300 focus:border-sky-500 focus:ring-sky-500 rounded-full focus:ring-1;
+}
+.form-search__button {
+    @apply bg-red-500 absolute top-[5px] left-[10px];
+}
+
+/* =========sidebar---------------- */
+.app-with-sidebar {
+    @apply flex items-center gap-4;
+}
+.sidebar {
+}
+.sidebar-list {
+    @apply sticky left-0 top-0 flex flex-col items-center bg-red-500 w-[96px];
+}
+.sidebar-link {
+    @apply block py-4;
+}
+.content {
+    @apply flex-auto;
+}

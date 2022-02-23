@@ -1,11 +1,10 @@
-const HomePage = {
-    render() {
-        console.log("home");
-
-        return /* html */ `
-        <a href="/">Home</a>
-            <a href="/about">About</a>
-        `;
-    },
-};
-export default HomePage;
+// const HomePage = {
+//     async render() {
+//         return /* html */ `
+//         `;
+//     },
+//     afterRender() {
+//         Banner.afterRender();
+//     },
+// };
+// export default HomePage;

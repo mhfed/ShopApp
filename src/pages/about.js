@@ -1,9 +1,20 @@
+import Header from "../components/header";
+import SideBar from "../components/sidebar";
+
 const AboutPage = {
     render() {
-        console.log("about");
         return /* html */ `
-        <a href="/">Home</a>
-            <a href="/about">About</a>
+        <div class="app-wrapper">
+            <!-- App sidebar -->
+            ${SideBar.render()}
+            <div class="app-content">
+                <!-- Header -->
+                ${Header.render()}
+                <!-- Banner -->
+                <h3 class="text-4xl">About</h3>
+
+            </div>
+        </div>
         `;
     },
 };
